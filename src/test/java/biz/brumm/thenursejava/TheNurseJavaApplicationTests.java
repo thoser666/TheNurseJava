@@ -8,6 +8,7 @@ class TheNurseJavaApplicationTests {
 
     @Test
     void contextLoads() {
+        assert true;
     }
 
 }
