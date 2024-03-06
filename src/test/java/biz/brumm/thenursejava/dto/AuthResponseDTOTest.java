@@ -4,22 +4,22 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
 class AuthResponseDTOTest {
-    AuthResponseDTO authResponseDTO = new AuthResponseDTO();
+  AuthResponseDTO authResponseDTO = new AuthResponseDTO();
 
-    @Test
-    void testSetAuthenticationToken() {
-        authResponseDTO.setAuthenticationToken("authenticationToken");
-    }
+  @Test
+  void testSetAuthenticationToken() {
+    authResponseDTO.setAuthenticationToken("authenticationToken");
+  }
 
-    @Test
-    void testSetUsername() {
-        authResponseDTO.setUsername("username");
-    }
+  @Test
+  void testSetUsername() {
+    authResponseDTO.setUsername("username");
+  }
 
-    @Test
-    void testSetIsAdmin() {
-        authResponseDTO.setIsAdmin("isAdmin");
-    }
+  @Test
+  void testSetIsAdmin() {
+    authResponseDTO.setIsAdmin("isAdmin");
+  }
 
     @Test
     void testEquals() {
@@ -46,4 +46,5 @@ class AuthResponseDTOTest {
 //    }
 }
 
-//Generated with love by TestMe :) Please raise issues & feature requests at: https://weirddev.com/forum#!/testme
+// Generated with love by TestMe :) Please raise issues & feature requests at:
+// https://weirddev.com/forum#!/testme
