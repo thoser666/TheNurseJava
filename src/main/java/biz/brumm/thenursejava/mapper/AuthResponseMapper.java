@@ -7,5 +7,5 @@ import org.mapstruct.Mapper;
 @Mapper
 public interface AuthResponseMapper {
 
-    AuthResponseDTO authResponseToAuthResponseDTO(AuthResponse authResponse);
+  AuthResponseDTO authResponseToAuthResponseDTO(AuthResponse authResponse);
 }
