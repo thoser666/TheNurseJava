@@ -18,7 +18,7 @@
         <sentry.version>7.4.0</sentry.version>
         <mail.version>2.0.1</mail.version>
         <org.mapstruct.version>1.6.0.Beta1</org.mapstruct.version>
-        <org.projectlombok.version>1.18.24</org.projectlombok.version>
+        <org.projectlombok.version>1.18.30</org.projectlombok.version>
     </properties>
     <dependencies>
         <dependency>
