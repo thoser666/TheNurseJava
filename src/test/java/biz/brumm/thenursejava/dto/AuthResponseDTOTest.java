@@ -21,29 +21,29 @@ class AuthResponseDTOTest {
     authResponseDTO.setIsAdmin("isAdmin");
   }
 
-    @Test
-    void testEquals() {
-        boolean result = authResponseDTO.equals("o");
-        Assertions.assertEquals(false, result);
-    }
+  @Test
+  void testEquals() {
+    boolean result = authResponseDTO.equals("o");
+    Assertions.assertEquals(false, result);
+  }
 
-    @Test
-    void testCanEqual() {
-        boolean result = authResponseDTO.canEqual("other");
-        Assertions.assertEquals(false, result);
-    }
+  @Test
+  void testCanEqual() {
+    boolean result = authResponseDTO.canEqual("other");
+    Assertions.assertEquals(false, result);
+  }
 
-    @Test
-    void testHashCode() {
-        int result = authResponseDTO.hashCode();
-        Assertions.assertEquals(357642, result);
-    }
+  @Test
+  void testHashCode() {
+    int result = authResponseDTO.hashCode();
+    Assertions.assertEquals(357642, result);
+  }
 
-//    @Test
-//    void testToString() {
-//        String result = authResponseDTO.toString();
-//        Assertions.assertEquals("replaceMeWithExpectedResult", result);
-//    }
+  //    @Test
+  //    void testToString() {
+  //        String result = authResponseDTO.toString();
+  //        Assertions.assertEquals("replaceMeWithExpectedResult", result);
+  //    }
 }
 
 // Generated with love by TestMe :) Please raise issues & feature requests at:
