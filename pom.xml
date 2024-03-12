@@ -19,6 +19,7 @@
         <mail.version>2.0.1</mail.version>
         <org.mapstruct.version>1.6.0.Beta1</org.mapstruct.version>
         <org.projectlombok.version>1.18.30</org.projectlombok.version>
+        <testcontainer.version>1.19.7</testcontainer.version>
     </properties>
     <dependencies>
         <dependency>
@@ -105,15 +106,22 @@
         <dependency>
             <groupId>org.testcontainers</groupId>
             <artifactId>testcontainers</artifactId>
-            <version>1.19.7</version>
+            <version>${testcontainer.version}</version>
             <scope>test</scope>
         </dependency>
         <dependency>
             <groupId>org.testcontainers</groupId>
             <artifactId>junit-jupiter</artifactId>
-            <version>1.19.7</version>
+            <version>${testcontainer.version}</version>
             <scope>test</scope>
         </dependency>
+        <dependency>
+            <groupId>org.testcontainers</groupId>
+            <artifactId>activemq</artifactId>
+            <version>${testcontainer.version}</version>
+            <scope>test</scope>
+        </dependency>
+
     </dependencies>
 
 
