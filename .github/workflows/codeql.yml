@@ -99,4 +99,4 @@ jobs:
     - run: curl deepsource.io/cli | sh  
 
     - name: upload to Deepsource
-    - run: ./bin/deepsource report --analyzer test-coverage --key <key> --value-file ./
+    - run: ./bin/deepsource report --analyzer test-coverage --key ${{ secrets.DEEPSOURCE_DSN }} --value-file ./
