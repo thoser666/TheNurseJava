@@ -94,3 +94,7 @@ jobs:
       uses: github/codeql-action/analyze@v3
       with:
         category: "/language:${{matrix.language}}"
+        
+    - name: Upload to DeepSource
+    - run: curl deepsource.io/cli | sh  
+    - run: ./bin/deepsource report --analyzer test-coverage --key <key> --value-file ./
