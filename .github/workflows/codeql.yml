@@ -94,9 +94,4 @@ jobs:
       uses: github/codeql-action/analyze@v3
       with:
         category: "/language:${{matrix.language}}"
-        
-    - name: Preparing Upload to DeepSource
-    - run: curl deepsource.io/cli | sh  
-
-    - name: upload to Deepsource
-    - run: ./bin/deepsource report --analyzer test-coverage --key ${{ secrets.DEEPSOURCE_DSN }} --value-file ./test.txt
+      
