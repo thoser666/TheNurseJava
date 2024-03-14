@@ -95,6 +95,8 @@ jobs:
       with:
         category: "/language:${{matrix.language}}"
         
-    - name: Upload to DeepSource
+    - name: Preparing Upload to DeepSource
     - run: curl deepsource.io/cli | sh  
+
+    - name: upload to Deepsource
     - run: ./bin/deepsource report --analyzer test-coverage --key <key> --value-file ./
